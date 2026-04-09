@@ -1,0 +1,256 @@
+/* TrueForm Base CSS */
+
+/* --- Theming & Variables --- */
+:root {
+    --bg-color: #0b0b0b;
+    --text-color: #ffffff;
+    --text-muted: #bababa;
+    --accent-yellow: #d4ff00;
+    --accent-purple: #9c89eb;
+    --card-bg: #1a1a1a;
+    --nav-bg: #f5f5f5;
+    --font-primary: 'Poppins', sans-serif;
+}
+
+/* --- Global Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* --- App Container (Mobile Constraints) --- */
+#app-container {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--bg-color);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Screen Transitions --- */
+.screen {
+    display: none;
+    flex: 1;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-out;
+}
+.screen.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   01 - LOADING SCREEN
+   ========================================= */
+#screen-loading {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    height: 100%;
+}
+.loading-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loading-content h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+}
+.loading-content p {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.loading-footer {
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.btn-primary {
+    background-color: #f7f7f7;
+    color: #0b0b0b;
+    border: none;
+    padding: 1.1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    transition: transform 0.1s;
+}
+.btn-primary:active {
+    transform: scale(0.97);
+}
+
+/* =========================================
+   09 - HOME SCREEN
+   ========================================= */
+.home-header {
+    text-align: center;
+    padding: 1.5rem 1rem 0.5rem;
+}
+.home-header h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.home-content {
+    padding: 1rem 1.5rem;
+    padding-bottom: 7rem;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+    background-color: var(--accent-yellow);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+.welcome-banner .avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-right: 1.2rem;
+}
+.welcome-text h3 {
+    font-weight: 800;
+    font-size: 1.45rem;
+    line-height: 1.2;
+}
+.nutrition-link {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0.3rem;
+    letter-spacing: 0.5px;
+}
+
+/* Today's Menu */
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.meal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.meal-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.meal-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.meal-info h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+.meal-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Help Center */
+.help-center-card {
+    background-color: var(--accent-purple);
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: #000;
+}
+.help-center-card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+}
+.help-links {
+    list-style: none;
+}
+.help-links li {
+    margin-bottom: 1rem;
+}
+.help-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* =========================================
+   BOTTOM NAVIGATION
+   ========================================= */
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-bg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: none; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 1.5rem 0;
+    z-index: 100;
+}
+.bottom-nav .nav-item {
+    font-size: 2.2rem;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-nav .nav-item.active {
+    color: var(--accent-yellow);
+    background-color: #000;
+    border-radius: 14px;
+    padding: 0.6rem 1.2rem;
+}
