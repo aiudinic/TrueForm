@@ -29,9 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     switchScreen('screen-loading');
 
-    navItems.forEach(item => {
+    // Unified handler for ANY element that has a data-target attribute
+    const triggerElements = document.querySelectorAll('[data-target]');
+    triggerElements.forEach(item => {
         item.addEventListener('click', (e) => {
-            e.preventDefault();
+            if (item.tagName === 'A') e.preventDefault();
             const targetId = item.dataset.target;
             if(document.getElementById(targetId)) {
                 switchScreen(targetId);

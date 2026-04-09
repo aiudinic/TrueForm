@@ -58,7 +58,7 @@
                 <div class="meal-list">
 
                     <!-- Breakfast -->
-                    <div class="meal-card">
+                    <div class="meal-card clickable" data-target="screen-detail" style="cursor: pointer;">
                         <img src="images/breakfast.png" alt="Breakfast" class="meal-img">
                         <div class="meal-info">
                             <h4>BREAKFAST</h4>
@@ -95,6 +95,94 @@
                         <li><a href="#">Adjust nutrition profile <i class="ph ph-caret-right"></i></a></li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SCREEN 09A: DETAILED MEAL PAGE -->
+        <!-- ============================== -->
+        <section id="screen-detail" class="screen">
+            <header class="home-header">
+                <h2>TRUE FORM</h2>
+            </header>
+            <div class="detail-content">
+                <button class="btn-back" data-target="screen-home"><i class="ph-bold ph-caret-left"></i> BACK</button>
+
+                <div class="detail-card main-detail">
+                    <h3>MUSHROOM & SWISS SCRAMBLED EGGS WITH ROASTED SWEET POTATOES</h3>
+                    <img src="images/breakfast.png" alt="Breakfast Detail" class="detail-img">
+                </div>
+
+                <div class="instructions-section">
+                    <h3>COOKING<br>INSTRUCTIONS</h3>
+                    <h4>OVEN</h4>
+                    <ol>
+                        <li>Preheat oven to 375°F (190°C).</li>
+                        <li>Remove meal sleeve, plastic film, and cup (if applicable)</li>
+                        <li>Place tray on an oven safe baking sheet and heat for 10-15 minutes.</li>
+                        <li>Carefully remove meal, let cool, plate</li>
+                    </ol>
+                    <h4>MICROWAVE</h4>
+                    <ol>
+                        <li>Remove meal sleeve, partially peel back film to remove cup.</li>
+                        <li>Microwave meal on HIGH for 2-3 minutes.</li>
+                        <li>Remove meal, let cool, peel off film, plate and enjoy!</li>
+                    </ol>
+                </div>
+
+                <div class="detail-card nutrition-card">
+                    <h3>NUTRITION PER SERVING</h3>
+                    <div class="nutrition-row"><span>Calories:</span> <span>440kcal</span></div>
+                    <div class="nutrition-row"><span>Fat:</span> <span>20g</span></div>
+                    <div class="nutrition-row"><span>Saturated Fat:</span> <span>6g</span></div>
+                    <div class="nutrition-row"><span>Carbohydrate:</span> <span>46g</span></div>
+                    <div class="nutrition-row"><span>Sugar:</span> <span>11g</span></div>
+                    <div class="nutrition-row"><span>Dietary Fiber:</span> <span>7g</span></div>
+                    <div class="nutrition-row"><span>Protein:</span> <span>23g</span></div>
+                    <div class="nutrition-row"><span>Cholesterol:</span> <span>380mg</span></div>
+                    <div class="nutrition-row"><span>Sodium:</span> <span>710mg</span></div>
+                </div>
+
+                <div class="ingredients-section">
+                    <h3>INGREDIENTS</h3>
+                    <p>Sweet Potatoes, Liquid Whole Eggs, Cremini Mushrooms, Portobello Mushrooms, Baby Spinach, Milk,
+                        Olive Oil, Swiss Cheese, Garlic, Butter, Sea Salt, Black Pepper, Thyme</p>
+                    <p class="allergens">Allergens: Egg, Milk</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SCREEN 03: SIGN UP             -->
+        <!-- ============================== -->
+        <section id="screen-signup" class="screen">
+            <header class="home-header">
+                <h2>TRUE FORM</h2>
+            </header>
+            <div class="signup-content">
+                <h1 class="page-title">SIGN UP</h1>
+
+                <form class="signup-form">
+                    <div class="input-group">
+                        <label>NAME</label>
+                        <input type="text" value="Ryan Morrison">
+                    </div>
+                    <div class="input-group">
+                        <label>ADDRESS</label>
+                        <input type="text" value="14 York St, Toronto, ON M5J 2Z2">
+                    </div>
+                    <button type="button" class="btn-signup" data-target="screen-loading">NEXT</button>
+                </form>
+
+                <p class="partner-text">Or Sign up with one of our partners.</p>
+                <div class="social-icons">
+                    <div class="social-icon"><i class="ph-fill ph-apple-logo"></i></div>
+                    <div class="social-icon"><i class="ph-bold ph-google-logo"></i></div>
+                    <div class="social-icon"><i class="ph-fill ph-facebook-logo"></i></div>
+                    <div class="social-icon"><i class="ph-bold ph-instagram-logo"></i></div>
+                </div>
+
+                <p class="login-text">Already have an account? <a href="#" class="link-yellow">LOG IN</a></p>
             </div>
         </section>
 
