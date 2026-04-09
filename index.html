@@ -31,7 +31,27 @@
                 <p>Nourish your strength. Discover your true form.</p>
             </div>
             <div class="loading-footer">
-                <button class="btn-primary" data-target="screen-signup"> ENTER </button>
+                <button class="btn-primary" data-target="screen-directional"> ENTER </button>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SCREEN 02: DIRECTIONAL         -->
+        <!-- ============================== -->
+        <section id="screen-directional" class="screen">
+            <div class="loading-content">
+                <h1>TRUE FORM</h1>
+                <p>Nourish your strength. Discover your true form.</p>
+            </div>
+            <div class="directional-footer">
+                <button class="btn-primary"
+                    style="background-color: var(--accent-yellow); color: #000; margin-bottom: 1.5rem;">LOG IN</button>
+                <button class="btn-primary"
+                    style="background-color: var(--accent-yellow); color: #000; margin-bottom: 2.5rem;"
+                    data-target="screen-signup">SIGN UP</button>
+                <p style="text-align: center; width: 100%;"><a href="#" class="skip-link"
+                        style="margin-top: 0; color: #fff; font-weight: 700;" data-target="screen-home">Or continue
+                        without an account</a></p>
             </div>
         </section>
 
@@ -150,9 +170,7 @@
                     <p class="allergens">Allergens: Egg, Milk</p>
                 </div>
             </div>
-        </section>
-
-        <!-- ============================== -->
+        </section> <!-- ============================== -->
         <!-- SCREEN 03: SIGN UP             -->
         <!-- ============================== -->
         <section id="screen-signup" class="screen">
@@ -171,7 +189,45 @@
                         <label>ADDRESS</label>
                         <input type="text" value="14 York St, Toronto, ON M5J 2Z2">
                     </div>
-                    <button type="button" class="btn-signup" data-target="screen-survey-1">NEXT</button>
+                    <button type="button" class="btn-signup" data-target="screen-signup-step2">NEXT</button>
+                </form>
+
+                <p class="partner-text">Or Sign up with one of our partners.</p>
+                <div class="social-icons">
+                    <div class="social-icon"><i class="ph-fill ph-apple-logo"></i></div>
+                    <div class="social-icon"><i class="ph-bold ph-google-logo"></i></div>
+                    <div class="social-icon"><i class="ph-fill ph-facebook-logo"></i></div>
+                    <div class="social-icon"><i class="ph-bold ph-instagram-logo"></i></div>
+                </div>
+
+                <p class="login-text">Already have an account? <a href="#" class="link-yellow">LOG IN</a></p>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SCREEN 04: SIGN UP STEP 2      -->
+        <!-- ============================== -->
+        <section id="screen-signup-step2" class="screen">
+            <header class="home-header">
+                <h2>TRUE FORM</h2>
+            </header>
+            <div class="signup-content">
+                <h1 class="page-title">SIGN UP</h1>
+
+                <form class="signup-form">
+                    <div class="input-group">
+                        <label>EMAIL</label>
+                        <input type="email" value="rmorrison@mlse.com">
+                    </div>
+                    <div class="input-group">
+                        <label>PASSWORD</label>
+                        <input type="password" value="************">
+                    </div>
+                    <div class="input-group">
+                        <label>RE-ENTER PASSWORD</label>
+                        <input type="password" value="************">
+                    </div>
+                    <button type="button" class="btn-signup" data-target="screen-survey-1">SIGN UP</button>
                 </form>
 
                 <p class="partner-text">Or Sign up with one of our partners.</p>
@@ -279,6 +335,62 @@
                 <div class="survey-footer">
                     <button class="btn-primary" data-target="screen-home"
                         style="background-color: var(--accent-yellow); color: #000;">COMPLETE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SCREEN 11: MY MEALS            -->
+        <!-- ============================== -->
+        <section id="screen-meals" class="screen">
+            <header class="home-header">
+                <h2>TRUE FORM</h2>
+            </header>
+            <div class="home-content">
+                <button class="btn-primary"
+                    style="background-color: var(--accent-yellow); color: #000; margin-bottom: 2rem; border-radius: 14px;">VIEW
+                    YESTERDAY'S MENU</button>
+
+                <div class="section-title"
+                    style="text-align: center; margin-bottom: 2rem; font-size: 2rem; letter-spacing: -0.5px;">TODAY'S
+                    MENU</div>
+                <div class="meal-list">
+                    <!-- Breakfast -->
+                    <div class="meal-card clickable" data-target="screen-detail" style="cursor: pointer;">
+                        <img src="images/breakfast.png" alt="Breakfast" class="meal-img">
+                        <div class="meal-info">
+                            <h4>BREAKFAST</h4>
+                            <p>Mushroom & Swiss Scrambled Eggs with Roasted Sweet Potatoes</p>
+                        </div>
+                    </div>
+                    <!-- Lunch -->
+                    <div class="meal-card">
+                        <img src="images/lunch.png" alt="Lunch" class="meal-img">
+                        <div class="meal-info">
+                            <h4>LUNCH</h4>
+                            <p>Pulled BBQ Chicken with Mac & Cheese</p>
+                        </div>
+                    </div>
+                    <!-- Dinner -->
+                    <div class="meal-card">
+                        <img src="images/dinner.png" alt="Dinner" class="meal-img">
+                        <div class="meal-info">
+                            <h4>DINNER</h4>
+                            <p>Teriyaki Salmon with Miso Roasted Carrots & Sesame Broccoli</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-primary"
+                    style="background-color: var(--accent-yellow); color: #000; margin-top: 1rem; margin-bottom: 2rem; border-radius: 14px;">VIEW
+                    TOMORROW'S MENU</button>
+
+                <div class="goals-card">
+                    <h3>TODAYS GOALS</h3>
+                    <div class="nutrition-row"><span>CALORIES:</span> <span>3730/4500 kcal</span></div>
+                    <div class="nutrition-row"><span>CARBS:</span> <span>365 / 549 grams</span></div>
+                    <div class="nutrition-row"><span>PROTEIN:</span> <span>87 / 119 grams</span></div>
+                    <div class="nutrition-row"><span>FATS:</span> <span>60 / 80 grams</span></div>
                 </div>
             </div>
         </section>

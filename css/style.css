@@ -50,13 +50,21 @@ body {
     overflow-y: auto;
     animation: fadeIn 0.3s ease-out;
 }
+
 .screen.active {
     display: flex;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* =========================================
@@ -69,26 +77,31 @@ body {
     padding: 2rem;
     height: 100%;
 }
+
 .loading-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .loading-content h1 {
     font-size: 3.2rem;
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 0.5rem;
 }
+
 .loading-content p {
     font-size: 0.95rem;
     font-weight: 500;
 }
+
 .loading-footer {
     width: 100%;
     padding-bottom: 3rem;
 }
+
 .btn-primary {
     background-color: #f7f7f7;
     color: #0b0b0b;
@@ -102,8 +115,16 @@ body {
     font-family: var(--font-primary);
     transition: transform 0.1s;
 }
+
 .btn-primary:active {
     transform: scale(0.97);
+}
+
+.directional-footer {
+    width: 100%;
+    padding: 0 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /* =========================================
@@ -113,6 +134,7 @@ body {
     text-align: center;
     padding: 1.5rem 1rem 0.5rem;
 }
+
 .home-header h2 {
     font-size: 1.8rem;
     font-weight: 800;
@@ -134,6 +156,7 @@ body {
     color: #000;
     margin-bottom: 2rem;
 }
+
 .welcome-banner .avatar {
     width: 65px;
     height: 65px;
@@ -141,11 +164,13 @@ body {
     object-fit: cover;
     margin-right: 1.2rem;
 }
+
 .welcome-text h3 {
     font-weight: 800;
     font-size: 1.45rem;
     line-height: 1.2;
 }
+
 .nutrition-link {
     font-size: 0.75rem;
     font-weight: 800;
@@ -163,17 +188,20 @@ body {
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
+
 .meal-list {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
 }
+
 .meal-card {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
 .meal-img {
     width: 85px;
     height: 85px;
@@ -181,12 +209,14 @@ body {
     object-fit: cover;
     flex-shrink: 0;
 }
+
 .meal-info h4 {
     font-size: 1.1rem;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 0.2rem;
 }
+
 .meal-info p {
     font-size: 0.85rem;
     color: var(--text-muted);
@@ -201,18 +231,22 @@ body {
     padding: 1.5rem;
     color: #000;
 }
+
 .help-center-card h3 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 1.2rem;
 }
+
 .help-links {
     list-style: none;
 }
+
 .help-links li {
     margin-bottom: 1rem;
 }
+
 .help-links a {
     color: #000;
     text-decoration: none;
@@ -234,12 +268,13 @@ body {
     background-color: var(--nav-bg);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    display: none; 
+    display: none;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0 1.5rem 0;
     z-index: 100;
 }
+
 .bottom-nav .nav-item {
     font-size: 2.2rem;
     color: #000;
@@ -249,6 +284,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .bottom-nav .nav-item.active {
     color: var(--accent-yellow);
     background-color: #000;
@@ -263,6 +299,7 @@ body {
     padding: 1rem 1.5rem;
     padding-bottom: 7rem;
 }
+
 .btn-back {
     background-color: var(--accent-yellow);
     border: none;
@@ -278,6 +315,7 @@ body {
     font-family: var(--font-primary);
     margin-bottom: 1.5rem;
 }
+
 .detail-card {
     background-color: var(--accent-purple);
     border-radius: 16px;
@@ -286,48 +324,57 @@ body {
     margin-bottom: 2rem;
     text-align: center;
 }
+
 .main-detail h3 {
     font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 1rem;
     letter-spacing: -0.5px;
 }
+
 .detail-img {
     width: 100%;
     border-radius: 8px;
     object-fit: cover;
 }
+
 .instructions-section {
     text-align: center;
     margin-bottom: 2rem;
 }
+
 .instructions-section h3 {
     font-size: 1.8rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
     line-height: 1.1;
 }
+
 .instructions-section h4 {
     font-size: 1.1rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
     text-align: left;
 }
+
 .instructions-section ol {
     text-align: left;
     margin-bottom: 1.5rem;
     padding-left: 1.2rem;
 }
+
 .instructions-section li {
     font-size: 0.95rem;
     margin-bottom: 0.4rem;
     font-weight: 500;
 }
+
 .nutrition-card h3 {
     font-size: 1.4rem;
     font-weight: 800;
     margin-bottom: 1.2rem;
 }
+
 .nutrition-row {
     display: flex;
     justify-content: space-between;
@@ -335,23 +382,28 @@ body {
     font-weight: 700;
     font-size: 0.95rem;
 }
+
 .nutrition-row span:first-child {
     font-weight: 800;
 }
+
 .ingredients-section {
     text-align: center;
 }
+
 .ingredients-section h3 {
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
 }
+
 .ingredients-section p {
     font-size: 0.95rem;
     line-height: 1.4;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
+
 .allergens {
     font-weight: 700 !important;
 }
@@ -366,24 +418,29 @@ body {
     align-items: center;
     padding-bottom: 5rem;
 }
+
 .page-title {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
+
 .signup-form {
     width: 100%;
     margin-bottom: 2rem;
 }
+
 .input-group {
     margin-bottom: 1.5rem;
 }
+
 .input-group label {
     display: block;
     font-weight: 800;
     margin-bottom: 0.5rem;
 }
+
 .input-group input {
     width: 100%;
     background-color: #f5f5f5;
@@ -395,6 +452,7 @@ body {
     color: #0b0b0b;
     font-weight: 600;
 }
+
 .btn-signup {
     background-color: var(--accent-yellow);
     color: #0b0b0b;
@@ -408,16 +466,19 @@ body {
     font-family: var(--font-primary);
     margin-top: 1rem;
 }
+
 .partner-text {
     font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
 .social-icons {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
 }
+
 .social-icon {
     width: 60px;
     height: 60px;
@@ -429,10 +490,12 @@ body {
     font-size: 2.2rem;
     color: #0b0b0b;
 }
+
 .login-text {
     font-size: 0.95rem;
     font-weight: 700;
 }
+
 .link-yellow {
     color: var(--accent-yellow);
     text-decoration: none;
@@ -448,23 +511,28 @@ body {
     height: 100%;
     padding: 2rem 1.5rem;
 }
+
 .survey-header {
     text-align: center;
     margin-bottom: 1.5rem;
 }
+
 .survey-header h2 {
     font-size: 1.8rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
+
 .survey-header p {
     font-size: 1.05rem;
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .survey-header strong {
     font-size: 1.25rem;
 }
+
 .survey-question {
     text-align: center;
     font-size: 1.5rem;
@@ -472,13 +540,16 @@ body {
     margin-bottom: 2rem;
     line-height: 1.25;
 }
+
 .survey-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
-    margin-bottom: auto; /* Pushes the footer down */
+    margin-bottom: auto;
+    /* Pushes the footer down */
     padding-bottom: 2rem;
 }
+
 .survey-option {
     border: 3px solid var(--accent-purple);
     border-radius: 14px;
@@ -493,15 +564,19 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
-.survey-option.selected, .survey-option:active {
+
+.survey-option.selected,
+.survey-option:active {
     background-color: var(--accent-purple);
     color: #000;
 }
+
 .survey-footer {
     text-align: center;
     padding-bottom: 1rem;
     margin-top: 1rem;
 }
+
 .skip-link {
     display: inline-block;
     margin-top: 1.5rem;
@@ -521,6 +596,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .account-card {
     background-color: var(--accent-purple);
     border-radius: 16px;
@@ -529,6 +605,7 @@ body {
     margin-bottom: 1.5rem;
     width: 100%;
 }
+
 .account-card h3 {
     font-size: 1.4rem;
     font-weight: 800;
@@ -536,13 +613,16 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
+
 .account-links {
     list-style: none;
     text-align: left;
 }
+
 .account-links li {
     margin-bottom: 0.8rem;
 }
+
 .account-links a {
     color: #000;
     text-decoration: none;
@@ -552,6 +632,25 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .account-links a i {
     font-size: 1.2rem;
+}
+
+/* =========================================
+   11 - MY MEALS SCREEN
+   ========================================= */
+.goals-card {
+    background-color: var(--accent-purple);
+    border-radius: 16px;
+    padding: 2rem;
+    color: #000;
+}
+
+.goals-card h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
 }
