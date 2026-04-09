@@ -31,7 +31,7 @@
                 <p>Nourish your strength. Discover your true form.</p>
             </div>
             <div class="loading-footer">
-                <button id="toggle-theme-btn" class="btn-primary"> ENTER </button>
+                <button class="btn-primary" data-target="screen-signup"> ENTER </button>
             </div>
         </section>
 
@@ -171,7 +171,7 @@
                         <label>ADDRESS</label>
                         <input type="text" value="14 York St, Toronto, ON M5J 2Z2">
                     </div>
-                    <button type="button" class="btn-signup" data-target="screen-loading">NEXT</button>
+                    <button type="button" class="btn-signup" data-target="screen-survey-1">NEXT</button>
                 </form>
 
                 <p class="partner-text">Or Sign up with one of our partners.</p>
@@ -183,6 +183,151 @@
                 </div>
 
                 <p class="login-text">Already have an account? <a href="#" class="link-yellow">LOG IN</a></p>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SURVEY SCREENS (1 to 4)        -->
+        <!-- ============================== -->
+        <!-- Survey 1/4 -->
+        <section id="screen-survey-1" class="screen">
+            <div class="survey-content">
+                <header class="survey-header">
+                    <h2>TRUE FORM</h2>
+                    <p>SELECT YOUR PLAN<br><strong>1/4</strong></p>
+                </header>
+                <h3 class="survey-question">WHAT ARE YOUR GOALS?<br>SELECT ALL THAT APPLY.</h3>
+                <div class="survey-grid">
+                    <div class="survey-option">Lose Weight</div>
+                    <div class="survey-option selected">Gain Weight</div>
+                    <div class="survey-option">Hormone Balance</div>
+                    <div class="survey-option">Reduce Inflammation</div>
+                    <div class="survey-option">Gut Health</div>
+                    <div class="survey-option">Internal Recovery</div>
+                </div>
+                <div class="survey-footer">
+                    <button class="btn-primary" data-target="screen-survey-2"
+                        style="background-color: var(--accent-yellow); color: #000;">NEXT</button>
+                    <a href="#" class="skip-link" data-target="screen-home">Or Complete this Step Later</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Survey 2/4 -->
+        <section id="screen-survey-2" class="screen">
+            <div class="survey-content">
+                <header class="survey-header">
+                    <h2>TRUE FORM</h2>
+                    <p>SELECT YOUR PLAN<br><strong>2/4</strong></p>
+                </header>
+                <h3 class="survey-question">WHAT KIND OF MEALS<br>DO YOU LIKE?<br>SELECT ALL THAT APPLY.</h3>
+                <div class="survey-grid">
+                    <div class="survey-option">Animal Protein</div>
+                    <div class="survey-option selected">Vegetarian</div>
+                    <div class="survey-option">Vegan</div>
+                    <div class="survey-option">Pescatarian</div>
+                    <div class="survey-option">Gluten-Free</div>
+                    <div class="survey-option">Keto</div>
+                </div>
+                <div class="survey-footer">
+                    <button class="btn-primary" data-target="screen-survey-3"
+                        style="background-color: var(--accent-yellow); color: #000;">NEXT</button>
+                    <a href="#" class="skip-link" data-target="screen-home">Or Complete this Step Later</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Survey 3/4 -->
+        <section id="screen-survey-3" class="screen">
+            <div class="survey-content">
+                <header class="survey-header">
+                    <h2>TRUE FORM</h2>
+                    <p>SELECT YOUR PLAN<br><strong>3/4</strong></p>
+                </header>
+                <h3 class="survey-question">HOW MANY TRUE FORM<br>MEALS PER DAY WILL YOU<br>BE EATING?</h3>
+                <div class="survey-grid">
+                    <div class="survey-option">1</div>
+                    <div class="survey-option">2</div>
+                    <div class="survey-option selected">3</div>
+                    <div class="survey-option">4</div>
+                    <div class="survey-option">5</div>
+                    <div class="survey-option">6</div>
+                </div>
+                <div class="survey-footer">
+                    <button class="btn-primary" data-target="screen-survey-4"
+                        style="background-color: var(--accent-yellow); color: #000;">NEXT</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Survey 4/4 -->
+        <section id="screen-survey-4" class="screen">
+            <div class="survey-content">
+                <header class="survey-header">
+                    <h2>TRUE FORM</h2>
+                    <p>SELECT YOUR PLAN<br><strong>4/4</strong></p>
+                </header>
+                <h3 class="survey-question">HOW MANY TRUE FORM<br>MEALS PER WEEK WILL YOU<br>BE EATING?</h3>
+                <div class="survey-grid">
+                    <div class="survey-option">1</div>
+                    <div class="survey-option">2</div>
+                    <div class="survey-option">3</div>
+                    <div class="survey-option selected">4</div>
+                    <div class="survey-option">5</div>
+                    <div class="survey-option">6 - 7</div>
+                </div>
+                <div class="survey-footer">
+                    <button class="btn-primary" data-target="screen-home"
+                        style="background-color: var(--accent-yellow); color: #000;">COMPLETE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- SCREEN 10: ACCOUNT             -->
+        <!-- ============================== -->
+        <section id="screen-account" class="screen">
+            <header class="home-header">
+                <h2>TRUE FORM</h2>
+            </header>
+            <div class="account-content">
+
+                <div class="account-card">
+                    <h3>MY ACCOUNT</h3>
+                    <ul class="account-links">
+                        <li><a href="#">Personal Info <i class="ph-bold ph-caret-right"></i></a></li>
+                        <li><a href="#">Past Orders <i class="ph-bold ph-caret-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="account-card">
+                    <h3>SHARE YOUR ACCOUNT</h3>
+                    <ul class="account-links">
+                        <li><a href="#">Get Your Sharable Nutrition Link <i class="ph-bold ph-caret-right"></i></a></li>
+                        <li><a href="#">View Inputted Nutrition Goals <i class="ph-bold ph-caret-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="account-card">
+                    <h3>CONTACT US</h3>
+                    <ul class="account-links">
+                        <li><a href="#">Help Centre <i class="ph-bold ph-caret-right"></i></a></li>
+                        <li><a href="#">Contact Us <i class="ph-bold ph-caret-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="account-card">
+                    <h3>LEGAL TERMS</h3>
+                    <ul class="account-links">
+                        <li><a href="#">Terms and Conditions <i class="ph-bold ph-caret-right"></i></a></li>
+                        <li><a href="#">Privacy <i class="ph-bold ph-caret-right"></i></a></li>
+                        <li><a href="#">Data Tracking <i class="ph-bold ph-caret-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <button class="btn-primary"
+                    style="background-color: var(--accent-yellow); color: #000; margin-top: 1rem;"
+                    data-target="screen-loading">LOG OUT</button>
             </div>
         </section>
 

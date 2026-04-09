@@ -36,7 +36,7 @@ body {
     background-color: var(--bg-color);
     position: relative;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,6 +47,7 @@ body {
     display: none;
     flex: 1;
     flex-direction: column;
+    overflow-y: auto;
     animation: fadeIn 0.3s ease-out;
 }
 .screen.active {
@@ -436,4 +437,121 @@ body {
     color: var(--accent-yellow);
     text-decoration: none;
     font-weight: 800;
+}
+
+/* =========================================
+   SURVEY SCREENS
+   ========================================= */
+.survey-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem 1.5rem;
+}
+.survey-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.survey-header h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.survey-header p {
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.survey-header strong {
+    font-size: 1.25rem;
+}
+.survey-question {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.25;
+}
+.survey-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: auto; /* Pushes the footer down */
+    padding-bottom: 2rem;
+}
+.survey-option {
+    border: 3px solid var(--accent-purple);
+    border-radius: 14px;
+    padding: 1.2rem 0.5rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.survey-option.selected, .survey-option:active {
+    background-color: var(--accent-purple);
+    color: #000;
+}
+.survey-footer {
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+.skip-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   10 - ACCOUNT SCREEN
+   ========================================= */
+.account-content {
+    padding: 1.5rem 1.5rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account-card {
+    background-color: var(--accent-purple);
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+.account-card h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.account-links {
+    list-style: none;
+    text-align: left;
+}
+.account-links li {
+    margin-bottom: 0.8rem;
+}
+.account-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account-links a i {
+    font-size: 1.2rem;
 }
