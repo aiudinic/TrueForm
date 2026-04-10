@@ -66,9 +66,8 @@
             <div class="home-content">
                 <!-- Welcome Banner -->
                 <div class="welcome-banner">
-                    <img src="images/avatar.png" alt="Ryan" class="avatar">
                     <div class="welcome-text">
-                        <h3>Welcome, Ryan</h3>
+                        <h3 id="welcome-name">Welcome, Guest</h3>
                         <a href="#" class="nutrition-link" id="link-nutrition">VIEW TODAY'S NUTRITION GOALS ></a>
                     </div>
                 </div>
@@ -293,13 +292,13 @@
                 <form class="signup-form">
                     <div class="input-group">
                         <label>NAME</label>
-                        <input type="text" value="Ryan Morrison">
+                        <input type="text" id="signup-name" placeholder="Enter your name">
                     </div>
                     <div class="input-group">
                         <label>ADDRESS</label>
-                        <input type="text" value="14 York St, Toronto, ON M5J 2Z2">
+                        <input type="text" id="signup-address" placeholder="Enter your address">
                     </div>
-                    <button type="button" class="btn-signup" data-target="screen-signup-step2">NEXT</button>
+                    <button type="button" class="btn-signup" data-target="screen-signup-step2" data-validate="signup1">NEXT</button>
                 </form>
 
                 <p class="partner-text">Or Sign up with one of our partners.</p>
@@ -331,17 +330,17 @@
                 <form class="signup-form">
                     <div class="input-group">
                         <label>EMAIL</label>
-                        <input type="email" value="rmorrison@mlse.com">
+                        <input type="email" id="signup-email" placeholder="Enter your email">
                     </div>
                     <div class="input-group">
                         <label>PASSWORD</label>
-                        <input type="password" value="************">
+                        <input type="password" id="signup-password" placeholder="Create a password">
                     </div>
                     <div class="input-group">
                         <label>RE-ENTER PASSWORD</label>
-                        <input type="password" value="************">
+                        <input type="password" id="signup-repassword" placeholder="Confirm your password">
                     </div>
-                    <button type="button" class="btn-signup" data-target="screen-survey-1">SIGN UP</button>
+                    <button type="button" class="btn-signup" data-target="screen-survey-1" data-validate="signup2">SIGN UP</button>
                 </form>
 
                 <p class="partner-text">Or Sign up with one of our partners.</p>
@@ -368,6 +367,9 @@
                         <h2>TRUE FORM</h2>
                     </div>
                     <p>SELECT YOUR PLAN<br><strong>1/4</strong></p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 25%;"></div>
+                    </div>
                 </header>
                 <h3 class="survey-question">WHAT ARE YOUR GOALS?<br>SELECT ALL THAT APPLY.</h3>
                 <div class="survey-grid">
@@ -395,6 +397,9 @@
                         <h2>TRUE FORM</h2>
                     </div>
                     <p>SELECT YOUR PLAN<br><strong>2/4</strong></p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 50%;"></div>
+                    </div>
                 </header>
                 <h3 class="survey-question">WHAT KIND OF MEALS<br>DO YOU LIKE?<br>SELECT ALL THAT APPLY.</h3>
                 <div class="survey-grid">
@@ -423,6 +428,9 @@
                         <h2>TRUE FORM</h2>
                     </div>
                     <p>SELECT YOUR PLAN<br><strong>3/4</strong></p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 75%;"></div>
+                    </div>
                 </header>
                 <h3 class="survey-question">HOW MANY TRUE FORM<br>MEALS PER DAY WILL YOU<br>BE EATING?</h3>
                 <div class="survey-grid">
@@ -450,6 +458,9 @@
                         <h2>TRUE FORM</h2>
                     </div>
                     <p>SELECT YOUR PLAN<br><strong>4/4</strong></p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 100%;"></div>
+                    </div>
                 </header>
                 <h3 class="survey-question">HOW MANY TRUE FORM<br>MEALS PER WEEK WILL YOU<br>BE EATING?</h3>
                 <div class="survey-grid">
