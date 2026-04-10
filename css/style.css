@@ -70,7 +70,8 @@ body {
 /* =========================================
    01 - LOADING SCREEN
    ========================================= */
-#screen-loading, #screen-directional {
+#screen-loading,
+#screen-directional {
     justify-content: center;
     align-items: center;
     text-align: center;
