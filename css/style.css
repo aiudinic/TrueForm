@@ -135,31 +135,31 @@ body {
    09 - HOME SCREEN
    ========================================= */
 .header-top-row {
-    position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: center;
     width: 100%;
 }
 
 .btn-back-header {
-    position: absolute;
-    left: 0;
-    background: transparent;
+    justify-self: flex-start;
+    background-color: var(--accent-yellow);
     border: none;
-    color: var(--accent-yellow);
-    font-family: var(--font-primary);
+    border-radius: 12px;
+    padding: 0.6rem 1.2rem;
     font-size: 1rem;
     font-weight: 800;
-    cursor: pointer;
+    color: #000;
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    padding: 0.5rem 0;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    transition: transform 0.1s;
 }
 
 .btn-back-header:active {
-    transform: scale(0.95);
+    transform: scale(0.97);
 }
 
 .home-header {
