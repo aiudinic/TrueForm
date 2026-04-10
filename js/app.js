@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        const navVisibleScreens = ['screen-home', 'screen-account', 'screen-meals', 'screen-detail'];
+        const navVisibleScreens = ['screen-home', 'screen-account', 'screen-meals', 'screen-detail', 'screen-detail-lunch', 'screen-detail-dinner'];
         if (navVisibleScreens.includes(targetId)) {
             bottomNav.style.display = 'flex';
         } else {
