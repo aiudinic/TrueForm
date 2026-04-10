@@ -12,10 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        if (targetId === 'screen-loading') {
-            bottomNav.style.display = 'none';
-        } else {
+        const navVisibleScreens = ['screen-home', 'screen-account', 'screen-meals', 'screen-detail'];
+        if (navVisibleScreens.includes(targetId)) {
             bottomNav.style.display = 'flex';
+        } else {
+            bottomNav.style.display = 'none';
         }
 
         navItems.forEach(item => {
