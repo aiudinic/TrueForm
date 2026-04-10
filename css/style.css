@@ -134,6 +134,34 @@ body {
 /* =========================================
    09 - HOME SCREEN
    ========================================= */
+.header-top-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-back-header {
+    position: absolute;
+    left: 0;
+    background: transparent;
+    border: none;
+    color: var(--accent-yellow);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 0;
+}
+
+.btn-back-header:active {
+    transform: scale(0.95);
+}
+
 .home-header {
     text-align: center;
     padding: 1.5rem 1rem 0.5rem;
